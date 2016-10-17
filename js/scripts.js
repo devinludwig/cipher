@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var sentence = prompt ("Write any sentence:")
 console.info(sentence);
 
@@ -29,3 +31,13 @@ function reverse(sentenceParam5) {
 }
 
 console.info(reverse(count(sentence)));
+
+
+  $("#enigma").click(function() {
+    alert(reverse(count(sentence)));
+  });
+
+  $("#turing").click(function() {
+    alert(sentence);
+  });
+});
